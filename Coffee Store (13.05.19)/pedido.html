@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Coffee Store - Faça Seu Pedido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/estilo.css" />
+    <script src="JSTCS.js"></script>
+    <link rel="shortcut icon" href="./imagens/logo_tcs.png" />
+    <script type="text/javascript">
+        function calcular()
+                {
+                        a=document.getElementById("n1").value * 1;
+                        b=document.getElementById("n2").value * 1.5;
+                        c=document.getElementById("n3").value * 1.5;
+                        d=document.getElementById("n4").value * 1.5;
+                        e=document.getElementById("n5").value * 1;
+                        f=document.getElementById("n6").value * 2.0;
+                        g=document.getElementById("n7").value * 1;
+                        h=document.getElementById("n8").value * 1;
+                        i=document.getElementById("n9").value * 2;
+                        j=document.getElementById("n10").value * 2;
+                        document.getElementById("resultado").value=(Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(h)+Number(i)+Number(j));
+                }
+</script>
+</head>
+
+<body>
+    <header>
+    <div class="div-header"></div>
+    <center>
+      <a href="index.html"><img src="./imagens/top_site.png" class="img-fluid"></a>
+          <div class="center">
+          <div class="topnav">
+            <a class="active" href="index.html">Início</a>
+            <a class="active" href="cardapio.html" >Cardápio</a>
+            <a class="active" href="cadastro.html">Cadastro</a>
+            <a class="active" href="pedido.html">Faça um Pedido</a>
+            <a class="active" href="sobreempresa.html">Sobre</a>
+          </div>
+          </div>
+    </center>
+    </header>
+        <div>
+                <form onsubmit="return false">
+                <center>
+                 <p>
+                 <fieldset style="width: 65%">
+                <tr>
+                <legend>Faça seu pedido</legend></p>
+                <div class="input-group mb-3">
+                                <br /><legend> Cafés</legend><br />
+                <label> Capuccino (cada R$ 1,00) <input id="n1" type="number" name="quantidade" min="0" max="10" step="1" autofocus> </label><br>
+                <label>Capuccino com canela (cada R$ 1,50) <input id="n2" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Capuccino com chocolate (cada R$ 1,50) <input id="n3" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Expresso (cada R$ 1,00) <input id="n4" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Vienna (cada R$ 2,00) <input id="n5" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                        <br /><legend> Chás</legend><br />
+                <label> Camomila (cada R$ 1,00) <input id="n6" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Erva Cidreira (cada R$ 1,00) <input id="n7" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Hortelã (cada R$ 1,00) <input id="n8" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Matte (cada R$ 2,00) <input id="n9" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <label> Preto (cada R$ 2,00) <input id="n10" type="number" name="quantidade" min="0" max="10" step="1"> </label><br>
+                <output id="resultado" onforminput="calcular()"></output>
+                <br />
+                <a class="btn btn-primary" input type="submit" onclick="calcular()" role="button">Calcular</a>
+                </tr>
+                </center>
+                </form>
+                </fieldset>
+                </div>
+        </div>
+        <br>
+        <br>
+        <footer>
+                <div class="div-footer">
+                        <p align="center" class="rodape">2019 &copy Todos direitos reservados: Gabriel Brandão e Heitor Escobar</p>        
+                </div>
+        </footer>
+</body>
+</html>
